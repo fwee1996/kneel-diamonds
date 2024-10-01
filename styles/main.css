@@ -1,0 +1,74 @@
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+
+/* Style for the container */
+#container {
+    max-width: 800px; 
+    margin-left: 2rem; /* Add left margin */
+}
+
+/* Style for each section */
+.choices__metals,
+.choices__sizes,
+.choices__styles {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between items */
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+.options {
+    flex-basis: 100%; /* Make width of each section to full */
+    border: 1px dashed #0c81db;
+    padding: 20px; 
+    margin-right: 80px;
+    border-radius: 20px;
+}
+
+/* Style for the button */
+.order button {
+    display: block; /* Make button takes full width */
+   /* margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px; 
+    background-color: #ff0000; /* Button background color */
+    color: #fff; /* Button text color */
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* Style for custom order jewelry list */
+.customOrders {
+    margin-top: 50px; /* Add space between button and custom orders */
+    /*text-align: center; */
+}
+
+/*Style for the choices section */
+.choices {
+    display: flex; 
+    flex-direction: row;
+}
+
+.jewelry{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,26 @@
+$ json-server database.json -p 8088
+
+
+ERD NOTES:
+Since each style, size, and metal combination represents one piece of jewelry:
+
+Each order can have multiple jewelry, where each jewelry is a combination of a style, size, and metal.
+Each customer can place multiple orders, each containing one or more pieces of jewelry.
+So the relationships between Orders and Styles, Sizes, and Metals is Many-to-Many Relationship:
+Each order in Orders can have multiple pieces of jewelry, which are combinations of styles, sizes, and metals.
+Conversely, each style, size, and metal can be associated with multiple orders, as they can be part of different pieces of jewelry in different orders.
+
+Example:
+
+A single order can include multiple pieces of jewelry, each with its own unique combination of style, size, and metal.
+Likewise, a style, size, or metal can be used in multiple pieces of jewelry across different orders.
+
+
+
+TASK:
+like the UrbanDweller function in the Indian Jeans project, fetch the data from your local API using options in database.json
+use async and await keywords to request data from an API.
+use a for..of loop to generate HTML representations of each object in the array.
+import the component functions into the main module, invoke them in the correct place, and compose all of the responses into a single HTML string.
+update the correct element on the DOM with your generated HTML.
+
